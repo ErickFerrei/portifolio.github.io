@@ -1,0 +1,131 @@
+section.habilidade {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  gap: 1rem;
+
+  margin: 0 0 100px 0;
+}
+
+section.habilidade .row {
+  display: flex;
+  gap: 2rem;
+  margin: 50px 0 0 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+section.habilidade .row.dois {
+  display: flex;
+  gap: 2rem;
+  margin: 50px 0 0 0;
+  justify-content: start;
+  flex-wrap: wrap;
+  padding: 0 0 0 110px;
+}
+
+section.habilidade h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+section.habilidade .card {
+  background-color: var(--cor-branco);
+  border-radius: 24px;
+  margin: 50px 0 0 0;
+  width: 310px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  transition: all 0.3s ease;
+}
+section.habilidade .card:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+
+section.habilidade .card .card-header img {
+  background: transparent;
+}
+section.habilidade .card .card-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -15%;
+  left: 10%;
+  width: 120px;
+  height: 120px;
+  border-radius: 24px;
+  background-color: var(--cor-azul-claro);
+}
+
+section.habilidade .card .card-body {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  padding: 1rem;
+  max-height: 300px;
+}
+
+section.habilidade .card .card-body p {
+  font-size: var(--f4);
+  font-weight: 700;
+  background: transparent;
+  color: var(--cor-preto);
+  text-transform: uppercase;
+}
+
+section.habilidade .card .card-body span {
+  font-size: var(--f3);
+  font-weight: 800;
+  background: transparent;
+  color: #949494;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 768px) {
+  section.habilidade {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+  }
+
+  section.habilidade .row {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 50px 0 0 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  section.habilidade .card {
+    width: 80%;
+    height: 300px;
+  }
+
+  section.habilidade .card .card-header {
+    top: -15%;
+    left: 10%;
+    width: 90px;
+    height: 90px;
+  }
+
+  section.habilidade .card .card-header img {
+    width: 70px;
+  }
+
+  section.habilidade .card .card-body {
+    max-height: 200px;
+  }
+}

@@ -1,0 +1,13 @@
+/*Importação da pasta GLOBAL */
+@import url("./global/normalize.css");
+@import url("./global/variables.css");
+
+/*Importação da pastas PAGES*/
+@import url("./pages/Index/header.css");
+@import url("./pages/Index/hero.css");
+@import url("./pages/Index/sobre-mim.css");
+@import url("./pages/Index/hablidades.css");
+@import url("./pages/Index/projetos.css");
+@import url("./pages/Index/contato.css");
+@import url("./pages/Index/footer.css");
+@import url("./pages/Index/preload.css");

@@ -1,0 +1,87 @@
+section.projetos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  gap: 1rem;
+
+  margin: 0 0 100px 0;
+}
+
+section.projetos h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+section.projetos .row {
+  display: flex;
+  gap: 2rem;
+  margin: 50px 0 0 0;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+section.projetos .card {
+  background-color: var(--cor-branco);
+  border-radius: 24px;
+  margin: 50px 0 0 0;
+  width: 350px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  transition: all 0.3s ease;
+  padding: 10px;
+  gap: 15px;
+}
+
+section.projetos .card .card-header {
+  background: transparent;
+}
+section.projetos .card .card-header img {
+  background: transparent;
+}
+
+section.projetos .card .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  background: transparent;
+}
+
+section.projetos .card .card-body p {
+  background: transparent;
+  text-align: center;
+  font-size: var(--f4);
+  color: var(--cor-azul-escuro);
+  font-weight: 700;
+}
+
+section.projetos .card .card-body span {
+  background: transparent;
+  text-align: center;
+  font-size: var(--f3);
+  color: var(--cor-azul-escuro);
+  font-weight: 400;
+}
+section.projetos .card .card-footer {
+  background: transparent;
+}
+section.projetos .card .card-footer a {
+  background: transparent;
+  color: var(--cor-azul-escuro);
+  font-weight: 700;
+}
+
+/* RESONSIVO */
+@media (max-width: 768px) {
+  section.projetos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 0 100px 0;
+  }
+}

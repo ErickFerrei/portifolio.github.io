@@ -1,0 +1,50 @@
+section.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  height: 500px;
+  margin: 0 0 100px 0;
+  background: transparent;
+}
+
+section.hero h2 {
+  font-size: var(--f6);
+  text-transform: uppercase;
+}
+
+section.hero p {
+  font-size: var(--f4);
+  text-align: center;
+}
+
+section.hero a {
+  text-decoration: none;
+  color: var(--cor-branco);
+  border: 2px solid var(--cor-branco);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 15px 0 0 0;
+}
+
+section.hero a:hover {
+  background-color: var(--cor-branco);
+  color: var(--cor-azul-escuro);
+}
+
+/* RESPONSIVO */
+
+@media (width < 768px) {
+  section.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+}

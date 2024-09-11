@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--cor-branco);
+  font-family: "JetBrains Mono", monospace;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1217px;
+  margin: 0 auto;
+  padding: 1.5rem 0 0 0;
+  background: transparent;
+  position: relative; /* Se necessário, para garantir que z-index funcione */
+  z-index: 1;
+  display: none;
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: var(--cor-azul-escuro);
+}
